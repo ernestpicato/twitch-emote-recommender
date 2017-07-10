@@ -9,7 +9,7 @@ import gensim
 
 # Create a dataframe from the pre-processed combination of twitchemotes.com
 # and Twitch.tv APIs
-df = pd.read_json('twitch_data.json')
+df = pd.read_json('twitch-data.json')
 
 # Reset index necessary after converting a dataframe to a .json file and then to
 # dataframe again

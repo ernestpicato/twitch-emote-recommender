@@ -142,4 +142,4 @@ df_final = df_extended[(df_extended['display_name'] != 'BeyondTheSummit') \
 df_final = df_final.drop(['information', 'emotes_clean', 'prefix_wrong', 'prefix_wrong_extended'], axis=1)
 df_final = df_final.rename(columns = {'emotes_clean_extended': 'emotes_parsed'})
 df_final.reset_index(drop=True, inplace=True)
-df_final.to_json('twitch_data.json')
+df_final.to_json('twitch-data.json')
