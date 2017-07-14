@@ -1,0 +1,15 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+<title>Twitch Emote Recommender</title>
+{% for result in results %}
+{% else %}
+    <h1>Channel does not exist or was not Top 10 material</h1>
+{% endfor %}
+{% for key, value in channels.iteritems() %}
+    <h3><a href="https://www.twitch.tv/{{ key }}">twitch.tv/{{ key }}</a></h3>
+    {% for image in value %}
+        <h3>{{ image[1] }}: <a><img src="{{ image[0] }}" title={{ image[1] }}></a></h3>
+    {% endfor %}
+{% endfor %}
+{% endblock %}

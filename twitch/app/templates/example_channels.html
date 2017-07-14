@@ -1,0 +1,12 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+<title>Twitch Emote Recommender</title>
+<table>
+{% for result in results %}
+    <tr>
+        <td><h3><a href="https://www.twitch.tv/{{ result }}">twitch.tv/{{ result }}</a></h3></td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
