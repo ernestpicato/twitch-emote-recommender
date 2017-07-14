@@ -6,6 +6,7 @@ from custom_structures import suspended_accounts, wrong_dict
 
 # Create a dataframe from the twitchemotes.com API (cached data from version 2 on
 # 06/28/2017; version 2 only returns static content, and was deprecated as of 07/07/2017)
+# If time permits, update content with version 3 (emotes more up to date)
 # 13777 Twitch.tv partners (start)
 df = pd.read_json('twitch-emote-api-cached-data.json')
 
@@ -143,3 +144,12 @@ df_final = df_final.drop(['information', 'emotes_clean', 'prefix_wrong', 'prefix
 df_final = df_final.rename(columns = {'emotes_clean_extended': 'emotes_parsed'})
 df_final.reset_index(drop=True, inplace=True)
 df_final.to_json('twitch-data.json')
+
+# For use with version 3 of twitchemotes.com API
+# import urllib
+#
+# response = urllib.urlopen('https://twitchemotes.com/api_cache/v3/subscriber.json')
+#
+# twitchemotes = pd.read_json(response)
+# twitchemotes = twitchemotes.T
+# partners = twitchemotes[twitchemotes['broadcaster_type']=='partner']
