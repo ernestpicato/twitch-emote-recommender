@@ -11,9 +11,9 @@ def emote_retrieval(channels):
     '''
     # Check to see if there is an emotes directory in the current directory,
     # and creates one if it does not exist
-    if not os.path.exists('./emotes'):
-        os.makedirs('./emotes')
-    print('Saving emotes to folder: ' + os.path.abspath('./emotes') + '...')
+    if not os.path.exists('./app/twitch-app/static/emotes'):
+        os.makedirs('./app/twitch-app/static/emotes')
+    print('Saving emotes to folder: ' + os.path.abspath('./app/twitch-app/static/emotes') + '...')
     print('Grabbing emote list...')
 
     # Get all the Twitch emotes from the API
@@ -36,7 +36,7 @@ def emote_retrieval(channels):
                 try:
                     if emotes['emoticons'][i]['regex'] == emoji:
                         print 'Downloading: {}...'.format(emotes['emoticons'][i]['regex'])
-                        urllib.urlretrieve(emotes['emoticons'][i]['images'][0]['url'], './emotes/' + emotes['emoticons'][i]['regex'] + '.png')
+                        urllib.urlretrieve(emotes['emoticons'][i]['images'][0]['url'], './app/twitch-app/static/emotes/' + emotes['emoticons'][i]['regex'] + '.png')
                 except Exception:
                     print 'Unable to retrieve {} due to formatting'.format(emotes['emoticons'][i]['regex'])
                     continue
@@ -44,5 +44,5 @@ def emote_retrieval(channels):
     print('Done! Kappa')
 
 if __name__ == '__main__':
-    channels = ['lirik', 'bikeman']
+    channels = ['thebuddha3', 'demarokkaantje', 'grendler', 'pipepunklive']
     emote_retrieval(channels)
