@@ -14,7 +14,6 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 pycparser==2.18
 pyOpenSSL==17.1.0
-pyspark==2.1.1+hadoop2.7
 requests==2.18.1
 six==1.10.0
 urllib3==1.21.1
