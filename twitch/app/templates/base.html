@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    </head>
+    <body>
+        <div class="center"><a href="/"><h1>Twitch Emote Recommender</h1></a></div><hr>
+        {% block content %}{% endblock %}
+    </body>
+    <body>
+        <header style="min-height: 255px;">
+        </header>
+        <article style="padding-bottom: 60px; width: 900px; margin: 0 auto;">
+        </article>
+        <footer style="position: fixed; bottom: 0px; width: 100%; height: 60px; background-color: black;">
+            This is an independent site not run by Twitch.tv.
+            Emotes are property of Twitch Interactive and their respective owners.
+        </footer>
+    </body>
+</html>

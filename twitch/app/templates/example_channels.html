@@ -1,0 +1,10 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+<title>Twitch Emote Recommender</title>
+<table>
+{% for result in results %}
+    <center><h3><a href="{{ url_for('recommendations', name=result) }}">{{ result }}</a></h3></center>
+{% endfor %}
+</table>
+{% endblock %}

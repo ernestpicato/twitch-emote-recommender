@@ -1,0 +1,27 @@
+<!doctype html>
+<div class="page-wrap">
+{% extends "base.html" %}
+{% block content %}
+<title>Twitch Emote Recommender</title>
+{% if result %}
+    You entered: {{ result }}
+{% endif %}
+<center><h3>Have a Twitch.tv broadcaster in mind (e.g. lirik, fairlight_excalibur, etc.)?</h3></center>
+<div class="buttonHolder">
+<form method="POST" action=".">
+    <center><h3>See who has similar emotes,</h3></center>
+    <input id="post_form_id" name="name" value="" />
+    <input type="submit", name='submit', value='Recommendations'>
+</form>
+</div>
+<div class="buttonHolder">
+<form method="POST" action=".">
+    <center><h3>who they were recommended to,</h3></center>
+    <input id="post_form_id" name="name" value="" />
+    <input type="submit", name='submit', value='Recommended To'>
+</form>
+</div>
+<center><h3>or discover something new... <a href="{{ url_for('example_channels') }}">
+<img border="0" alt="W3Schools" src="http://i.imgur.com/xQNUjSW.gif" width="100" height="130"></a></h3></center>
+</div>
+{% endblock %}
