@@ -10,3 +10,9 @@ EDA_Twitch_Data.pyc
 chatreplay.pyc
 custom_structures.pyc
 emote_retrieval.pyc
+app/.Python
+app/README.md
+app/bin/
+app/include/
+app/lib/
+app/pip-selfcheck.json
