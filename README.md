@@ -18,9 +18,13 @@ In contrast to Twitch.tv's current discovery directory that recommends channels 
 
 13777 partner channel ids were collected from the twitchemotes.com API. Using these ids, requests were made to the Twitch.tv API to get additional information like channel age and number of followers. Channels that had changed urls, had their emotes removed, or violated Terms of Service (TOS) were removed, with 13526 channels retained (98.2%). The distribution of emotes per channel is right skewed:
 
-<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/emotes.png" width="100" height="20">
+<p align="center">
+<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/emotes.png" width="400" height="400">
+</p>
 
-<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/num_emotes_extended.png" width="100" height="20">
+<p align="center">
+<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/num_emotes_extended.png" width="400" height="400">
+</p>
 
 ### Data Modeling, Validation, and Presentation (App):
 
