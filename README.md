@@ -23,7 +23,7 @@ In contrast to Twitch.tv's current discovery directory that recommends channels 
 </p>
 
 <p align="center">
-<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/num_emotes_extended.png" width="400" height="300">
+<img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/emotes_extended.png" width="400" height="300">
 </p>
 
 ### Data Modeling, Validation, and Presentation (App):
