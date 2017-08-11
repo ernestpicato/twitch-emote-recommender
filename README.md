@@ -22,7 +22,7 @@ In contrast to Twitch.tv's current discovery directory that recommends channels 
 <img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/num_emotes.png" width="400" height="300">
 </p>
 
-The emotes for each channel were then parsed to extract the main context of each emote. For example, lirikSALT, lirikLEWD, and lirikBLIND were parsed into salt, lewd, and blind. For 282 (2.1%) channels, the prefixes was manually parsed. The most common emotes were rage, love, and hype:  
+The emotes for each channel were then parsed to extract the main context of each emote. For example, lirikSALT, lirikLEWD, and lirikBLIND were parsed into salt, lewd, and blind. For 282 (2.1%) channels, the prefixes were manually parsed. The most common emotes were rage, love, and hype:  
 
 <p align="center">
 <img src="https://github.com/ernestpicato/twitch-emote-recommender/blob/master/twitch/emotes/emotes_extended.png" width="400" height="300">
